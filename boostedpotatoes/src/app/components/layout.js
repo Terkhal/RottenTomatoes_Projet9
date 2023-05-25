@@ -6,12 +6,12 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
 export default function Layout({ children }) {
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <><nav>
-      <Navbar router={router}/>
+    <>
+      <nav>
+        <Navbar router={router} />
       </nav>
-      <ToastContainer/>
       <main>{children}</main>
       <Footer />
     </>
